@@ -1,15 +1,83 @@
 // This is your Prisma schema file,
 // learn more about it in the docs: https://pris.ly/d/prisma-schema
 
-// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
-// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
-
 generator client {
   provider = "prisma-client-js"
-  output   = "../src/generated/prisma"
 }
 
 datasource db {
-  provider = "postgresql"
+  provider = "mysql"
   url      = env("DATABASE_URL")
+}
+
+model Category {
+  id        String    @id @default(cuid())
+  name      String    @unique
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+  photos    Photo[]
+}
+
+model Photo {
+  id         String   @id @default(cuid())
+  name       String
+  src        String
+  alt        String
+  width      Int
+  height     Int
+  category   Category @relation(fields: [categoryId], references: [id])
+  categoryId String
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+}
+
+model CustomerPhoto {
+  id         String   @id @default(cuid())
+  name       String
+  url        String
+  alt        String
+  selected   Boolean @default(false)
+  width      Int
+  height     Int
+  customer   Customer @relation(fields: [customerId], references: [id], onDelete: Cascade)
+  customerId String
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+}
+
+model Invoice {
+  id          String        @id @default(cuid())
+  name        String
+  phone       String
+  email       String
+  address     String
+  eventTitle  String
+  items       InvoiceItem[]
+  grandTotal  Float
+  createdAt   DateTime      @default(now())
+  updatedAt   DateTime      @updatedAt
+}
+
+model InvoiceItem {
+  id          String   @id @default(cuid())
+  description String
+  quantity    Int
+  unitPrice   Float
+  total       Float
+  invoice     Invoice  @relation(fields: [invoiceId], references: [id], onDelete: Cascade)
+  invoiceId   String
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model Customer {
+  id            String          @id @default(cuid())
+  name          String
+  email         String          @unique
+  password      String
+  phone         String?
+  address       String?
+  photos        CustomerPhoto[]
+  createdAt     DateTime        @default(now())
+  updatedAt     DateTime        @updatedAt
 }

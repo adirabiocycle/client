@@ -35,9 +35,6 @@ export default function ServiceCard({ title, description, icon, accentColor }: S
         <div>
           <h3 className="text-xl font-semibold mb-2">{title}</h3>
           <p className="text-muted-foreground mb-4">{description}</p>
-          <div className="flex items-center text-sm font-medium group-hover:text-primary transition-colors">
-            Learn more <ArrowRight className="ml-1 h-4 w-4" />
-          </div>
         </div>
       </div>
     </motion.div>

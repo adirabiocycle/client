@@ -12,10 +12,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
           <div className="md:col-span-1">
             <Link href="/" className="inline-flex items-center space-x-2 mb-4">
-              <svg viewBox="0 0 24 24" className="h-8 w-8 fill-current">
-                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-5-9h10v2H7z" />
-              </svg>
-              <span className="font-bold text-xl">AdiRa BioCycle</span>
+              <img src="/logo/logo.png" alt="AdiRa BioCycle Logo" className="h-10 w-auto" />
             </Link>
             <p className="text-muted-foreground mb-4">
               Building an integrated plastic and dry waste recovery ecosystem in Bihar.

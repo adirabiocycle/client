@@ -38,8 +38,8 @@ export default function CompanyStats() {
       <h2 className="text-3xl font-bold text-center mb-12">Our Impact</h2>
       
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-        <Stat value={500} label="Tonnes of Waste Recovered" suffix="+" />
-        <Stat value={100} label="Waste Collectors Empowered" suffix="+" />
+        <Stat value={200} label="Tonnes of Waste Recovered" suffix="+" />
+        <Stat value={20} label="Waste Collectors Empowered" suffix="+" />
         <Stat value={20} label="Community Programs" suffix="+" />
         <Stat value={5} label="Recycling Partnerships" />
       </div>

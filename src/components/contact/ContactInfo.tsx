@@ -53,15 +53,6 @@ export default function ContactInfo() {
           </div>
         </div>
         
-        <div className="flex items-start gap-4">
-          <div className="p-3 rounded-full bg-primary/10 text-primary">
-            <Briefcase className="h-6 w-6" />
-          </div>
-          <div>
-            <h4 className="font-medium text-lg">Business Inquiries</h4>
-            <p className="text-muted-foreground">partnerships@adirabiocycle.com</p>
-          </div>
-        </div>
       </div>
     </div>
   );

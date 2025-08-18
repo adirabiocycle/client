@@ -48,10 +48,10 @@ export default function Vision() {
         
         <div className="relative h-[400px] w-full rounded-lg overflow-hidden shadow-xl">
           <Image 
-            src="https://images.pexels.com/photos/7299586/pexels-photo-7299586.jpeg" 
+            src="https://images.pexels.com/photos/802221/pexels-photo-802221.jpeg?auto=compress&w=800&q=80" 
             fill
             sizes="(max-width: 768px) 100vw, 50vw"
-            alt="AdiRa BioCycle vision"
+            alt="Plastic recycling in India"
             className="object-cover"
           />
         </div>

@@ -11,7 +11,7 @@ export default function WasteRecycledMeter() {
     threshold: 0.1,
   });
 
-  const totalWaste = 500; // Total waste in tonnes
+  const totalWaste = 200; // Total waste in tonnes
   const targetWaste = 1000; // Target waste in tonnes
   const percentage = (totalWaste / targetWaste) * 100;
 
@@ -65,7 +65,7 @@ export default function WasteRecycledMeter() {
           <div className="mt-8 grid grid-cols-2 gap-8 text-center">
             <div>
               <div className="text-3xl font-bold mb-2">
-                <CountUp end={300} duration={2} />+
+                <CountUp end={100} duration={2} />+
               </div>
               <p className="text-muted-foreground">Tonnes Processed</p>
             </div>

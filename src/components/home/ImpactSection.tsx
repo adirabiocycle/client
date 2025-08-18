@@ -58,14 +58,14 @@ export default function ImpactSection() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
           <StatCard
             icon={<Trash2 size={36} className="text-[#f26226]" />}
-            value={500}
+            value={200}
             label="Tonnes of Waste Recovered"
             suffix="+"
             delay={0.1}
           />
           <StatCard
             icon={<Users2 size={36} className="text-[#86bc40]" />}
-            value={100}
+            value={20}
             label="Waste Collectors Empowered"
             suffix="+"
             delay={0.2}

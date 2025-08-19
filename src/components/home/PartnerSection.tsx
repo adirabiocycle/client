@@ -14,29 +14,11 @@ export default function PartnerSection() {
   
   const partners = [
     {
-      name: "Bihar Urban Development Agency",
-      logo: "https://images.pexels.com/photos/416405/pexels-photo-416405.jpeg",
-      type: "Government",
-      description: "Strategic partnership for urban waste management initiatives"
+      name: "Lakshya for Development",
+      logo: "https://lakshyafordevelopment.org/wp-content/uploads/orignallogos.jpg",
+      type: "NGO",
+      description: "A leading NGO in Bihar focused on sustainable development and community empowerment.",
     },
-    {
-      name: "Patna Municipal Corporation",
-      logo: "https://images.pexels.com/photos/327533/pexels-photo-327533.jpeg",
-      type: "Government",
-      description: "Collaboration for city-wide waste collection and processing"
-    },
-    {
-      name: "EcoVentures Inc.",
-      logo: "https://images.pexels.com/photos/3184405/pexels-photo-3184405.jpeg",
-      type: "Corporate",
-      description: "Technology partner for waste tracking and analytics"
-    },
-    {
-      name: "GreenTech Solutions",
-      logo: "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg",
-      type: "Corporate",
-      description: "Recycling technology and infrastructure support"
-    }
   ];
   
   return (
@@ -88,7 +70,7 @@ export default function PartnerSection() {
             </motion.div>
           ))}
         </div>
-        
+{/*         
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
@@ -100,7 +82,7 @@ export default function PartnerSection() {
               View All Partners <ArrowRight className="ml-2 h-4 w-4" />
             </a>
           </Button>
-        </motion.div>
+        </motion.div> */}
       </div>
     </section>
   );

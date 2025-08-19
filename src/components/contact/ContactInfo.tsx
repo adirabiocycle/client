@@ -38,7 +38,7 @@ export default function ContactInfo() {
           </div>
           <div>
             <h4 className="font-medium text-lg">Phone</h4>
-            <p className="text-muted-foreground">+91 xxx xxx xxxx</p>
+            <p className="text-muted-foreground">+91 8076119552</p>
           </div>
         </div>
         

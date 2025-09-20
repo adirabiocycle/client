@@ -15,6 +15,11 @@ export const metadata: Metadata = {
   title: 'AdiRa BioCycle | Building Circular Economy Solutions in Bihar',
   description: 'AdiRa BioCycle is a social enterprise building an integrated plastic and dry waste recovery ecosystem in Bihar through recovery, sorting, processing, and recycling.',
   keywords: 'plastic waste management, recycling, circular economy, Bihar, waste recovery, sustainability',
+  icons: {
+    icon: '/logo/logo.png',
+    shortcut: '/logo/logo.png',
+    apple: '/logo/logo.png',
+  },
 };
 
 export default function RootLayout({
